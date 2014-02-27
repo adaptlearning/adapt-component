@@ -6,22 +6,14 @@ for (var file in window.__karma__.files) {
 }
 
 requirejs.config({
-    baseUrl: '/base/src',
+    baseUrl: '/base/js',
     paths: {
-        jquery: 'core/js/libraries/jquery',
-        underscore: 'core/js/libraries/underscore',
-        backbone: 'core/js/libraries/backbone',
-        modernizr: 'core/js/libraries/modernizr',
-        handlebars: 'core/js/libraries/handlebars',
-        imageReady: 'core/js/libraries/imageReady',
-        inview: 'core/js/libraries/inview',
-        scrollTo: 'core/js/libraries/scrollTo',
-        coreJS: 'core/js',
-        coreViews: 'core/js/views',
-        coreModels: 'core/js/models',
-        coreCollections: 'core/js/collections',
-        templates: 'templates/templates',
-        spec: '../test/spec'
+        jquery: '../tests/libraries/jquery-min',
+        underscore: '../tests/libraries/underscore-min',
+        backbone: '../tests/libraries/backbone-min',
+        sinon: '../tests/libraries/sinon',
+        contextFactory: '../tests/libraries/contextFactory',
+        AdaptMock: '../tests/libraries/AdaptMock'
     },
     shim: {
         jquery: [],
