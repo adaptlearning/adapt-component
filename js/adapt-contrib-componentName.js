@@ -1,13 +1,16 @@
 /*
-* adapt-component
-* License - http://github.com/adaptlearning/adapt_framework/LICENSE
-* Maintainers - Daryl Hedley <darylhedley@hotmail.com>
-*/
-
+ * adapt-component
+ * License - http://github.com/adaptlearning/adapt_framework/blob/master/LICENSE
+ * Maintainers - Daryl Hedley <darylhedley@hotmail.com>
+ */
 define(["coreViews/componentView", "coreJS/adapt"], function(ComponentView, Adapt) {
 
     var ComponentName = ComponentView.extend({
-        
+
+        preRender: function() {
+            console.log("pre-render");
+        },
+
         postRender: function() {
             console.log("rendering");
 
@@ -23,9 +26,11 @@ define(["coreViews/componentView", "coreJS/adapt"], function(ComponentView, Adap
             // This can be used with inview or when the model is set to complete/the question has been answered.
             this.setCompletionStatus();
         }
-        
+
     });
-    
+
     Adapt.register("componentName", ComponentName);
-    
+
+    return ComponentName;
+
 });
