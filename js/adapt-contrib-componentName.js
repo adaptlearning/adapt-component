@@ -8,8 +8,6 @@ define(["coreViews/componentView", "coreJS/adapt"], function(ComponentView, Adap
     var ComponentName = ComponentView.extend({
 
         preRender: function() {
-            console.log("pre-render");
-
             // Checks to see if the component should be reset on revisit
             this.checkIfResetOnRevisit();
         },
