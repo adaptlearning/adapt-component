@@ -9,6 +9,9 @@ define(["coreViews/componentView", "coreJS/adapt"], function(ComponentView, Adap
 
         preRender: function() {
             console.log("pre-render");
+
+            // Checks to see if the component should be reset on revisit
+            this.checkIfResetOnRevisit();
         },
 
         postRender: function() {
@@ -25,6 +28,19 @@ define(["coreViews/componentView", "coreJS/adapt"], function(ComponentView, Adap
             // Use this to set the model status to complete.
             // This can be used with inview or when the model is set to complete/the question has been answered.
             this.setCompletionStatus();
+        },
+
+        // Used to check if the component should reset on revisit
+        checkIfResetOnRevisit: function() {
+            var isResetOnRevisit = this.model.get('_isResetOnRevisit');
+
+            // If reset is enabled then state and model attributes should be reset to default.
+            if (isResetOnRevisit) {
+                this.model.set({
+                    _isEnabled: true,
+                    _isComplete: false
+                });
+            }
         }
 
     });
