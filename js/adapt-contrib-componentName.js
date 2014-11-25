@@ -1,5 +1,5 @@
 /*
- * adapt-component
+ * adapt-componentName
  * License - http://github.com/adaptlearning/adapt_framework/blob/master/LICENSE
  * Maintainers - Daryl Hedley <darylhedley@hotmail.com>
  */

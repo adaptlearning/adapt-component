@@ -16,7 +16,7 @@
     "url": "https://github.com/adaptlearning/adapt-contrib-componentName/issues"
   },
   "devDependencies": {
-    "grunt": "~0.4.2",
+    "grunt": "~0.4.5",
     "karma-script-launcher": "~0.1.0",
     "karma-html2js-preprocessor": "~0.1.0",
     "karma-chrome-launcher": "~0.1.2",
@@ -26,9 +26,9 @@
     "requirejs": "~2.1.11",
     "karma-requirejs": "~0.2.1",
     "karma-phantomjs-launcher": "~0.1.2",
-    "karma": "~0.10.9",
-    "karma-expect": "~1.0.0",
+    "karma": "~0.12.26",
+    "karma-expect": "~1.1.0",
     "mocha": "~1.17.1",
-    "karma-mocha": "~0.1.1"
+    "karma-mocha": "~0.1.0"
   }
 }
