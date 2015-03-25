@@ -34,10 +34,7 @@ define(["coreViews/componentView", "coreJS/adapt"], function(ComponentView, Adap
 
             // If reset is enabled then state and model attributes should be reset to default.
             if (isResetOnRevisit) {
-                this.model.set({
-                    _isEnabled: true,
-                    _isComplete: false
-                });
+                this.model.reset(isResetOnRevisit);
             }
         }
 
