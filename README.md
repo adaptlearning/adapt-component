@@ -14,12 +14,12 @@ Further details on developing components can be found on the [wiki](https://gith
 
 ##Installation
 
-Please describe the steps required to install your plugin. You should also detail any dependencies that are not part of the package.json file.
+Please describe the steps required to install your plug-in. You should also detail any dependencies that are not part of the package.json file.
 
 
 ##Usage
 
-Some details of how the plugin might be used should be given here.
+Some details of how the plug-in might be used should be given here.
 
 
 ##Settings overview
@@ -42,15 +42,15 @@ Developers should give some description for data expected for their component an
     "instruction":""
 }
 ```
-A description of the core settings can be found at: (Core model attributes)[https://github.com/adaptlearning/adapt_framework/wiki/Core-model-attributes]
+A description of the core settings can be found at: [Core model attributes](https://github.com/adaptlearning/adapt_framework/wiki/Core-model-attributes)
 
 
 ### Data description
 
-All attributes for your component should be described here. A description for core attributes can be found here: {Core-model-attributes}(https://github.com/adaptlearning/adapt_framework/wiki/Core-model-attributes)
+All attributes for your component should be described here. A description for core attributes can be found here: [Core model attributes](https://github.com/adaptlearning/adapt_framework/wiki/Core-model-attributes)
 
 
-Each component should also contain a schema.json file. This is a JSON schema of example.json. This file is needed for the component to work with the editor. It describes what fields are needed to edit the component. 
+Each component should also contain a properties.schema file. This is a JSON schema of example.json. This file is needed for the component to work with the authoring tool. It describes what fields are needed to edit the component. 
 
 ##Limitations
 
