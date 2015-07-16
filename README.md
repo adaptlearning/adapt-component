@@ -1,6 +1,5 @@
 #adapt-component
 
-
 A basic component skeleton to help developers create components. All components should have a readme that contains the following:
 
 * Title and Description
