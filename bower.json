@@ -3,9 +3,7 @@
   "version": "0.0.1",
   "framework": "^2.0.0",
   "homepage": "https://github.com/adaptlearning/adapt-contrib-componentName",
-  "authors": [
-    "Daryl Hedley <darylhedley@hotmail.com>"
-  ],
+  "issues": "https://adaptlearning.atlassian.net/secure/CreateIssue!default.jspa?pid=10100",
   "displayName" : "ComponentName",
   "component" : "componentName",
   "description": "Please enter a description about your component here. This is what will get shown when registered with the Adapt registry so make it good",
