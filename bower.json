@@ -1,12 +1,12 @@
 {
   "name": "adapt-contrib-componentName",
   "version": "0.0.1",
-  "homepage": "https://github.com/adaptlearning/adapt-contrib-componentName",
-  "authors": [
-    "Daryl Hedley <darylhedley@hotmail.com>"
-  ],
-  "description": "Please enter a description about your component here. This is what will get shown when registered with the Adapt registry so make it good",
+  "framework": ">=2",
+  "description": "Please enter a description of your component here.",
   "main": "/js/adapt-contrib-componentName.js",
+  "authors": [
+    "Your Name <your.email@example.org>"
+  ],
   "keywords": [
     "adapt-plugin",
     "adapt-component"

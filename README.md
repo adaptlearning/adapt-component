@@ -30,16 +30,16 @@ Developers should give some description for data expected for their component an
 
 ```
 {
-    "_id":"c-05",
-    "_parentId":"b-05",
-    "_type":"component",
-    "_component":"adapt-my-component",
-    "_classes":"",
-    "_layout":"left",
-    "title":"My Component",
-    "displayTitle":"My Component",
-    "body":"",
-    "instruction":""
+    "_id": "c-05",
+    "_parentId": "b-05",
+    "_type": "component",
+    "_component": "adapt-my-component",
+    "_classes": "",
+    "_layout": "left",
+    "title": "My Component",
+    "displayTitle": "My Component",
+    "body": "",
+    "instruction": ""
 }
 ```
 A description of the core settings can be found at: [Core model attributes](https://github.com/adaptlearning/adapt_framework/wiki/Core-model-attributes)
@@ -50,7 +50,7 @@ A description of the core settings can be found at: [Core model attributes](http
 All attributes for your component should be described here. A description for core attributes can be found here: [Core model attributes](https://github.com/adaptlearning/adapt_framework/wiki/Core-model-attributes)
 
 
-Each component should also contain a properties.schema file. This is a JSON schema of example.json. This file is needed for the component to work with the authoring tool. It describes what fields are needed to edit the component. 
+Each component should also contain a properties.schema file. This is a JSON schema of example.json. This file is needed for the component to work with the authoring tool. It describes what fields are needed to edit the component.
 
 ## Limitations
 
@@ -58,4 +58,4 @@ Please detail any limitation of your component.
 
 ## Browser spec
 
-If you have detailed browser spec you should detail them here.
+If you have a detailed browser spec you should list them here so that it is clear which browsers you have tested against. 
