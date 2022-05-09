@@ -1,33 +1,32 @@
-define([
-    "core/js/adapt",
-    "core/js/views/componentView"
-], function(Adapt, ComponentView) {
+import Adapt from 'core/js/adapt';
+import ComponentView from 'core/js/views/componentView';
 
-    var ComponentName = ComponentView.extend({
+class ComponentName extends ComponentView {
 
-        preRender: function() {
-            console.log("preRender");
-            //here is a good place to add any code you want to run prior to the component being rendered
-        },
+  get template() {
+    return 'componentName';
+  }
 
-        postRender: function() {
-            console.log("postRender");
-            // IMPORTANT!
-            // Both of the following methods need to be called inside your view.
+  preRender() {
+    console.log('preRender');
+    // here is a good place to add any code you want to run prior to the component being rendered
+  }
 
-            // Use this to set the model status to ready.
-            // It should be used when telling Adapt that this view is completely loaded.
-            // This is sometimes used in conjunction with imageReady.
-            this.setReadyStatus();
+  postRender() {
+    console.log('postRender');
+    // IMPORTANT!
+    // Both of the following methods need to be called inside your view.
 
-            // Use this to set the model status to complete.
-            // This can be used with inview or when the model is set to complete/the question has been answered.
-            this.setCompletionStatus();
-        }
+    // Use this to set the model status to ready.
+    // It should be used when telling Adapt that this view is completely loaded.
+    // This is sometimes used in conjunction with imageReady.
+    this.setReadyStatus();
 
-    }, {
-        template: "componentName"
-    });
+    // Use this to set the model status to complete.
+    // This can be used with inview or when the model is set to complete/the question has been answered.
+    this.setCompletionStatus();
+  }
 
-    return Adapt.register("componentName", ComponentName);
-});
+}
+
+export default Adapt.register('componentName', ComponentName);
