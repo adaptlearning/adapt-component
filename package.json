@@ -1,6 +1,6 @@
 {
   "name": "adapt-contrib-componentName",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "framework": ">=2",
   "description": "Please enter a description of your component here.",
   "main": "/js/adapt-contrib-componentName.js",
